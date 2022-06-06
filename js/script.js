@@ -34,23 +34,37 @@ generateButton.addEventListener('click',
         // prezzo finale scontato
         if (userAge === 'minorenne') {
             discount = ticketPrice * 0.2;
-            
+            document.getElementById('offer').innerHTML = 'Offer minor'
+
         } else if (userAge === 'over') {
             discount = ticketPrice * 0.4;
+            document.getElementById('offer').innerHTML = 'Offer over'
+        }else {
+            ticketPrice;
+            document.getElementById('offer').innerHTML = 'Standard'
+
         }
 
+        // prezzo finale
         let finalPrice = ticketPrice - discount;
-        console.log(finalPrice)
-
+        
+        // biglietto finale
         document.getElementById('ticket-name').innerHTML = userName;
         document.getElementById ('carriage').innerHTML = Math.floor(Math.random() * 10);
         document.getElementById ('cpcode').innerHTML= Math.floor(Math.random() * 1000)
         document.getElementById('price').innerHTML=  finalPrice.toFixed(2);
         document.getElementById ('finished-ticket').classList.add('active');
-
     }   
+);
 
+const cancelTicket = document.getElementById('cancel-ticket');
 
+cancelTicket .addEventListener('click',
+    function() {
+        document.getElementById('finished-ticket') .classList.remove('active');
+        document.getElementById('user-name').value='';
+        document.getElementById('user-km').value='';
+        document.getElementById('user-age').value='maggiorenne';
 
-
-)
+    }
+) 

@@ -7,3 +7,11 @@
 .form-item {
     padding: 1rem 0;
 }
+
+#finished-ticket {
+    display: none;
+}
+
+#finished-ticket.active {
+    display:block;
+}
