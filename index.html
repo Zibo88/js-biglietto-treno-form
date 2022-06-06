@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form biglietto</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    
+    <div class="form">
+        <h2>Calacola il prezzo del biglietto</h2>
+
+        <!-- nome e cognome dell'utente -->
+        <div class="form-item">
+            <label for="user-name">Nome Cognome</label>
+            <input type="text" id="user-name">
+        </div>
+
+        <!-- Km da percorrere -->
+        <div class="form-item">
+            <label for="user-km">Km da percorrere</label>
+            <input type="number" id="user-km">
+        </div>
+
+        <!-- fascia età -->
+        <div class="form-item">
+            <label for="user-age">Età</label>
+            <select id="user-age">
+                <option value="maggiorenne">Maggiorenne</option>
+                <option value="minorenne">Minorenne</option>
+                <option value="over65">Over 65</option>
+            </select>
+        </div>
+
+        <button id="generate-ticket">Genera</button>
+        <button id="cancel-ticket">Annulla</button>
+       
+
+
+    </div>
+
+
+
+
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
