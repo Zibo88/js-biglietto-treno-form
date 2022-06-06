@@ -62,9 +62,8 @@ const cancelTicket = document.getElementById('cancel-ticket');
 cancelTicket .addEventListener('click',
     function() {
         document.getElementById('finished-ticket') .classList.remove('active');
-        document.getElementById('user-name').value='';
-        document.getElementById('user-km').value='';
-        document.getElementById('user-age').value='maggiorenne';
-
+        document.getElementById('user-name').value = '';
+        document.getElementById('user-km').value = '';
+        document.getElementById('user-age').value ='maggiorenne';
     }
 ) 
